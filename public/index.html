@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Project</h1>
+        <form id="request-form">
+            <div class="url-method-container">
+                <select id="method" name="method">
+                    <option value="GET">GET</option>
+                    <option value="POST">POST</option>
+                    <option value="PATCH">PATCH</option>
+                    <option value="DELETE">DELETE</option>
+                </select>
+                <input type="text" id="url" name="url" placeholder="Enter request URL" required>
+            </div>
+
+            
+            <div id="headers-container">
+            
+            </div>
+            <button type="button" id="add-header" hidden>Add</button>
+
+            <h3>Body :</h3>
+            <div id="body-container">
+                <div class="key-value-pair">
+                    <input type="text" placeholder="Key" class="key-input">
+                    <input type="text" placeholder="Value" class="value-input">
+                    <button type="button" class="remove-pair" onclick="removePair(this)">Remove</button>
+                </div>
+            </div>
+            <button type="button" id="add-body">Add</button>
+
+            <button type="submit" class="submit-btn request">Send Request</button>
+        </form>
+
+        <h2>Response</h2>
+        <pre id="response"></pre>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

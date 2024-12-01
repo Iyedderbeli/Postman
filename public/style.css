@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 90%;
+    max-width: 700px;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+h1, h3 {
+    text-align: center;
+    color: #333;
+}
+
+.url-method-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input, select, textarea, button {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+select {
+    width: 20%;
+}
+
+input#url {
+    width: 80%;
+}
+
+.key-value-pair {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.key-input, .value-input {
+    width: 40%;
+}
+
+button {
+    background: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 15px;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+button.remove-pair {
+    background: #FF4136;
+    width: auto;
+    padding: 5px 10px;
+}
+.request{
+    display: block;
+    width: 100%;
+    margin-top: 15px;
+    background:  rgb(0, 178, 169);
+
+
+}
+pre {
+    background: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+    white-space: pre-wrap;
+}
